@@ -108,14 +108,7 @@
         >
           Google
         </v-btn>
-        <v-btn
-          variant="outlined"
-          size="large"
-          prepend-icon="mdi-github"
-          class="font-weight-medium"
-        >
-          GitHub
-        </v-btn>
+        
       </div>
     </v-form>
   </v-card-text>
