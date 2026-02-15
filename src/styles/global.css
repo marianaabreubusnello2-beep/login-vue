@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+/* Estilos para melhor contraste em tema escuro */
+.v-card {
+  background-color: rgba(45, 45, 45, 0.95) !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.v-card__title {
+  color: #ffffff !important;
+}
+
+/* Text field styling */
+.v-text-field .v-label {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+.v-text-field .v-field__input {
+  color: #ffffff !important;
+}
+
+.v-text-field .v-field__input::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Remove red borders and error styling */
+.v-text-field .v-field__outline,
+.v-text-field .v-field__outline::before,
+.v-text-field .v-field__outline::after,
+.v-text-field .v-field__outline__notch {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.v-text-field .v-messages {
+  color: #ffffff !important;
+}
+
+.v-text-field .v-messages__message {
+  color: #ffffff !important;
+}
+
+.v-text-field .v-field__hint {
+  color: #ffffff !important;
+}
+
+.v-messages__message {
+  color: #ffffff !important;
+}
+
+.v-input__details {
+  color: #ffffff !important;
+}
+
+.v-text-field .v-input__details .v-messages {
+  color: #ffffff !important;
+}
+
+.v-text-field .v-input__details .v-messages__message {
+  color: #ffffff !important;
+}
+
+/* Error state - only color message, not border */
+.v-text-field.v-input--error .v-messages {
+  color: #FF5252 !important;
+}
+
+.v-text-field.v-input--error .v-messages__message {
+  color: #FF5252 !important;
+}
+
+.v-text-field.v-input--error .v-field__outline,
+.v-text-field.v-input--error .v-field__outline::before,
+.v-text-field.v-input--error .v-field__outline::after {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.v-checkbox .v-label {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.v-alert {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.v-divider {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.v-text-field .v-field__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Link colors */
+.v-btn--variant-text {
+  color: #82B1FF !important;
+}
+
+.v-btn--variant-text:hover {
+  background-color: rgba(130, 177, 255, 0.1) !important;
+}
+
+/* Text secundário */
+.text-medium-emphasis {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.text-body2 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.text-caption {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Focus rings visíveis */
+:focus-visible {
+  outline: 2px solid #82B1FF;
+  outline-offset: 2px;
+}
